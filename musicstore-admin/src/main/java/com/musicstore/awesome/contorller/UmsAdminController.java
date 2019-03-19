@@ -1,14 +1,21 @@
 package com.musicstore.awesome.contorller;
 
+import com.musicstore.awesome.dto.UmsAdminParam;
+import com.musicstore.awesome.service.UmsAdminService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
 @RequestMapping("/users")
 public class UmsAdminController extends BaseController {
+
+    @Autowired
+    private UmsAdminService umsAdminService;
 
     @RequestMapping(value="/{userId}", method= RequestMethod.GET)
     public Object getUserById(@PathVariable Integer userId) {
@@ -20,5 +27,12 @@ public class UmsAdminController extends BaseController {
             int a = 1 / 0;
         }
         return ResponseEntity.ok(result);
+    }
+
+    @RequestMapping(value = "/admin/{uuid}", method = RequestMethod.GET)
+    public UmsAdminParam getAdminByUuid(@PathVariable String uuid) {
+        UmsAdminParam umsAdminParam = umsAdminService.getAdminByUuid(uuid);
+
+        return umsAdminParam;
     }
 }

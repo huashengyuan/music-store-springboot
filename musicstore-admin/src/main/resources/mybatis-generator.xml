@@ -6,7 +6,7 @@
     <!--数据库驱动-->
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <!--数据库链接地址账号密码-->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/musicstore" userId="suxiangxue" password="123456">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://140.143.236.179:3306/musticstore" userId="musicstoredeveloper" password="Dev4musicstore_">
         </jdbcConnection>
         <!--生成Model类存放位置-->
         <javaModelGenerator targetPackage="com.musicstore.awesome.dto" targetProject="src/main/java">
@@ -22,7 +22,7 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <table tableName="ums_admin" domainObjectName="UmsAdminParam" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="admin" domainObjectName="UmsAdminParam" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
 
     </context>
 </generatorConfiguration>

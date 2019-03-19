@@ -13,9 +13,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="awesome" options="-parameters" />
-      <module name="musicstore-admin" options="-parameters" />
-      <module name="musicstore-search" options="-parameters" />
+      <module name="awesome" options="" />
+      <module name="musicstore-admin" options="" />
+      <module name="musicstore-search" options="" />
     </option>
   </component>
 </project>
