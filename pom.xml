@@ -6,6 +6,9 @@
     <modules>
         <module>musicstore-admin</module>
         <module>musicstore-search</module>
+        <module>musicstore-common</module>
+        <module>musicstore-web</module>
+        <module>musicstore-api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
