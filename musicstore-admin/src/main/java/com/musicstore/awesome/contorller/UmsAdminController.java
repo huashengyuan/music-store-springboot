@@ -29,7 +29,7 @@ public class UmsAdminController extends BaseController {
         return ResponseEntity.ok(result);
     }
 
-    @RequestMapping(value = "/admin/{uuid}", method = RequestMethod.GET)
+    @RequestMapping(value = "/adminTest/{uuid}", method = RequestMethod.GET)
     public UmsAdminParam getAdminByUuid(@PathVariable String uuid) {
         UmsAdminParam umsAdminParam = umsAdminService.getAdminByUuid(uuid);
 
