@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class Artist implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public String uuid;
-    public String name;
-    public String photo;
-    public Boolean isActive;
-    public Boolean isDeleted;
+    private String uuid;
+    private String name;
+    private String photo;
+    private Boolean isActive;
+    private Boolean isDeleted;
 
     public String getUuid() {
         return uuid;

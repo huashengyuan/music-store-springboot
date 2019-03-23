@@ -5,14 +5,14 @@ import java.io.Serializable;
 public class Song implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public String uuid;
-    public String artistUuid;
-    public String genreUuid;
-    public String name;
-    public Float price;
-    public String file;
-    public Boolean isActive;
-    public Boolean isDeleted;
+    private String uuid;
+    private String artistUuid;
+    private String genreUuid;
+    private String name;
+    private Float price;
+    private String file;
+    private Boolean isActive;
+    private Boolean isDeleted;
 
     public String getUuid() {
         return uuid;

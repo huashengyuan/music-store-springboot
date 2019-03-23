@@ -5,11 +5,12 @@ import java.io.Serializable;
 public class Admin implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public String uuid;
-    public String name;
-    public String role;
-    public Boolean isActive;
-    public Boolean isDeleted;
+    private String uuid;
+    private String username;
+    private String password;
+    private String role;
+    private Boolean isActive;
+    private Boolean isDeleted;
 
     public String getUuid() {
         return uuid;
@@ -19,12 +20,20 @@ public class Admin implements Serializable {
         this.uuid = uuid;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getRole() {
@@ -55,7 +64,8 @@ public class Admin implements Serializable {
     public String toString() {
         return "Admin{" +
                 "uuid='" + uuid + '\'' +
-                ", name='" + name + '\'' +
+                ", name='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 ", isActive=" + isActive +
                 ", isDeleted=" + isDeleted +

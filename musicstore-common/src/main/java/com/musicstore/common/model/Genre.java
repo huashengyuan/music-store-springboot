@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Genre implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public String uuid;
-    public String name;
-    public Boolean isActive;
-    public Boolean isDeleted;
+    private String uuid;
+    private String name;
+    private Boolean isActive;
+    private Boolean isDeleted;
 
     public String getUuid() {
         return uuid;
