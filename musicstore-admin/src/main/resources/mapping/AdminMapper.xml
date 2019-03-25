@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.musicstore.admin.dao.AdminMapper">
+    <resultMap id="BaseResultMap" type="com.musicstore.common.model.Admin">
+        <result column="uuid" jdbcType="VARCHAR" property="uuid" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="role" jdbcType="VARCHAR" property="role" />
+        <result column="is_active" jdbcType="TINYINT" property="isActive" />
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+    </resultMap>
+    <select id="getAdminByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT * FROM admin where username = #{username}
+    </select>
+</mapper>
