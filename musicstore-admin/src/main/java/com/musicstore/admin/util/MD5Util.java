@@ -1,4 +1,4 @@
-package com.musicstore.admin.Util;
+package com.musicstore.admin.util;
 
 import java.security.MessageDigest;
 

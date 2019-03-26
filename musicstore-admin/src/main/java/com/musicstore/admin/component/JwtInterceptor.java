@@ -1,6 +1,6 @@
 package com.musicstore.admin.component;
 
-import com.musicstore.admin.Util.JwtHelper;
+import com.musicstore.admin.util.JwtHelper;
 import com.musicstore.admin.service.AdminService;
 import com.musicstore.common.model.Admin;
 import io.jsonwebtoken.Claims;

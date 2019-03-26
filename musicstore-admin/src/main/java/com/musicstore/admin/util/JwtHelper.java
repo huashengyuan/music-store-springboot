@@ -1,4 +1,4 @@
-package com.musicstore.admin.Util;
+package com.musicstore.admin.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
